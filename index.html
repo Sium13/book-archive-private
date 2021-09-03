@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Library</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body class="bg-gray">
+    <h2 class="text-center text-primary mt-4">Welcome to Open Library</h2>
+    <!-- book search area -->
+    <div class="input-group mb-3 w-50 mx-auto">
+        <input id="search-field" id="search-field2" type="text" class="form-control" placeholder="Search for a Book...."
+            aria-label="Recipient's username" aria-describedby="button-addon2">
+        <button onclick="searchBook()" class="btn btn-outline-secondary" type="button" id="button-search">Search
+        </button>
+    </div>
+
+    <!-- error message when input field is empty -->
+    <div id="error-empty" class="text-danger">
+
+    </div>
+
+
+    <!-- number  of found result showing-->
+    <div id="found-result" class="text-success">
+
+    </div>
+
+    <!-- error message for function problem plus other problem -->
+    <div id=" no-result">
+        <h4 id="error-massage" style="text-align: center" class="text-danger">Something Wrong, Please try again later.
+        </h4>
+    </div>
+
+    <!-- search result  for any case-->
+    <div id="search-result" class="row row-cols-1 row-cols-md-3 g-4">
+
+    </div>
+
+
+
+    <!-- bootstrap link  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+    <!-- my js file  -->
+    <script src="openlibrary.js"></script>
+</body>
+
+</html>
